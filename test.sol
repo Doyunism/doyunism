@@ -77,6 +77,7 @@ contract Ballot {
         Voter storage sender = voters[msg.sender];
         require(!sender.voted, "You already voted.");
         require(!sender.voted, "You already voted.222");
+        require(!sender.voted, "You already voted.333");
 
         require(to != msg.sender, "Self-delegation is disallowed.");
 
